@@ -7,3 +7,6 @@ Load the [serial slave program](http://www.pololu.com/docs/0J21/10.a "serial sla
 
 For Bluetooth connectivity, I put a Bluetooth Arduino atop the 3pi and connected the serial lines,
 with the Arduino programmed to simply pass along commands.
+
+To steer with the accelerometer, hold the device sideways.  Tilt it forward or back to drive
+forward or reverse; degree of tilt controls speed.  Tilt left or right to change direction.
