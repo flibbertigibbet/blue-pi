@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <TextView
+        android:id="@+id/textViewAccelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/accel_label"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSTOP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewAccelLabel"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/stop"
+        android:textOff="Stopped"
+        android:textOn="Driving" />
+
+    <TextView
+        android:id="@+id/textViewShowAccel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/ToggleButtonLeft"
+        android:layout_alignTop="@+id/textViewVoltage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ToggleButtonRight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ToggleButtonRight"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/textViewSpinLeftRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButtonSTOP"
+        android:layout_centerHorizontal="true"
+        android:text="@string/spin_LR"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ToggleButton
+        android:id="@+id/ToggleButtonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewAccelLabel"
+        android:layout_below="@+id/textViewSpinLeftRight"
+        android:layout_marginTop="16dp"
+        android:text="@string/spin_right"
+        android:textOff="Spin Right"
+        android:textOn="Stop Spinning Right" />
+
+    <ToggleButton
+        android:id="@+id/ToggleButtonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ToggleButtonRight"
+        android:layout_alignBottom="@+id/ToggleButtonRight"
+        android:layout_alignLeft="@+id/textViewAccelLabel"
+        android:layout_marginLeft="16dp"
+        android:text="@string/spin_left"
+        android:textOff="Spin Left"
+        android:textOn="Stop Spinning Left" />
+
+</RelativeLayout>

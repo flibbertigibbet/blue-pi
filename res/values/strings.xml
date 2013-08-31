@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="hello">Howdy world!</string>
+    <string name="app_name">Blue Pi</string>
+    <string name="stop">Stop</string>
+    <string name="forward">Forward</string>
+    <string name="reverse">Reverse</string>
+    <string name="left_fwd">Left Forward</string>
+    <string name="left_rev">Left Reverse</string>
+    <string name="right_fwd">Right Forward</string>
+    <string name="right_rev">Right Reverse</string>
+    <string name="battery_voltage">"3pi battery voltage: "</string>
+    <string name="accel_label">Steer Using Accelerometer</string>
+    <string name="spin_left">Spin Left</string>
+    <string name="spin_right">Spin Right</string>
+    <string name="use_accel">Use Accelerometer to Steer</string>
+    <string name="spin_LR">Spin Left or Right</string>
+
+</resources>

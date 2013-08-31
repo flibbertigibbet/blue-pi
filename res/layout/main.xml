@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hapticFeedbackEnabled="true"
+    android:orientation="vertical"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbars="horizontal|vertical" >
+
+    <TextView
+        android:id="@+id/textViewBatteryVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/battery_voltage"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonSTOP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/stop"
+        android:textOff="Stopped"
+        android:textOn="Driving" />
+
+    <TextView
+        android:id="@+id/textViewFWD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forward"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/seekBarFWD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="127"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <TextView
+        android:id="@+id/textViewREV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reverse"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/seekBarREV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="127"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <TextView
+        android:id="@+id/TextViewLEFT_FWD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left_fwd"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/seekBarLEFT_FWD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="127"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <TextView
+        android:id="@+id/TextViewLEFT_REV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left_rev"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/seekBarLEFT_REV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="127"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <TextView
+        android:id="@+id/TextViewRIGHT_FWD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/right_fwd"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/seekBarRIGHT_FWD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="127"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <TextView
+        android:id="@+id/TextViewRIGHT_REV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/right_rev"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/seekBarRIGHT_REV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="127"
+        android:progress="0"
+        android:secondaryProgress="0" />
+
+    <Button
+        android:id="@+id/buttonUseAccel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_accel" android:freezesText="false" android:layout_gravity="center_horizontal" android:layout_marginTop="25dp"/>
+
+</LinearLayout>
