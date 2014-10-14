@@ -16,10 +16,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
+import android.support.v4.content.LocalBroadcastManager;
 import android.text.format.Time;
 import android.util.Log;
 import android.widget.Toast;
-import android.support.v4.content.LocalBroadcastManager;
 
 public class BluetoothService extends Service {
 
